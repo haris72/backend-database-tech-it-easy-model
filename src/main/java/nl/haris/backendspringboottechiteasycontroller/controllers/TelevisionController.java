@@ -42,7 +42,7 @@ public class TelevisionController {
 
     // READ: Haal alle television's op
     @GetMapping
-    public ResponseEntity<List<Television>> getAllCars(@RequestParam(name = "brand",
+    public ResponseEntity<List<Television>> getAllTelevisions(@RequestParam(name = "brand",
             required = false) String brand) {
         if (brand != null) {
             List<Television> filteredTelevisions = getFilteredTelevision(brand);
@@ -65,7 +65,7 @@ public class TelevisionController {
 
     // UPDATE: Werk een bestaande television bij
     @PutMapping("/{id}")
-    public ResponseEntity<Television> updateCar(@PathVariable Long id, @RequestBody
+    public ResponseEntity<Television> updateTelevision(@PathVariable Long id, @RequestBody
     Television television) {
         var existingTelevision = findTelevisionById(id);
         if (existingTelevision == null) {
