@@ -1,8 +1,12 @@
 <<<<<<< HEAD
+<<<<<<< HEAD
 package nl.haris.backendspringboottechiteasymodel.controllers;
 =======
 package nl.haris.backendspringboottechiteasycontroller.controllers;
 >>>>>>> uitwerkingen
+=======
+package nl.haris.backendspringboottechiteasymodel.controllers;
+>>>>>>> origin/master
 
 
 import org.springframework.http.ResponseEntity;
