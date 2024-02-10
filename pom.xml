@@ -9,7 +9,7 @@
 		<relativePath/> <!-- lookup parent from repository -->
 	</parent>
 	<groupId>nl.haris</groupId>
-	<artifactId>backend-spring-boot-tech-it-easy-controller</artifactId>
+	<artifactId>backend-spring-boot-tech-it-easy-model</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
 	<name>backend-spring-boot-tech-it-easy-controller</name>
 	<description>Demo project for Spring Boot</description>

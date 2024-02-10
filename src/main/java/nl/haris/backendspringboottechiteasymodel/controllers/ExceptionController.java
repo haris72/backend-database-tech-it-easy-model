@@ -1,7 +1,7 @@
-package nl.haris.backendspringboottechiteasycontroller.controllers;
+package nl.haris.backendspringboottechiteasymodel.controllers;
 
-import nl.haris.backendspringboottechiteasycontroller.exceptions.NameTooLongException;
-import nl.haris.backendspringboottechiteasycontroller.exceptions.RecordNotFoundException;
+import nl.haris.backendspringboottechiteasymodel.exceptions.NameTooLongException;
+import nl.haris.backendspringboottechiteasymodel.exceptions.RecordNotFoundException;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.ControllerAdvice;

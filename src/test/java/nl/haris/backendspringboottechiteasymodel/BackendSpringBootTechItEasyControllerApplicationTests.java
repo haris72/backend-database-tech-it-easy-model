@@ -1,4 +1,4 @@
-package nl.haris.backendspringboottechiteasycontroller;
+package nl.haris.backendspringboottechiteasymodel;
 
 import org.junit.jupiter.api.Test;
 import org.springframework.boot.test.context.SpringBootTest;
