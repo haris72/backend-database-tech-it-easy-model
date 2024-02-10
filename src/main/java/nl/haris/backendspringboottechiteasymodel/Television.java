@@ -1,4 +1,4 @@
-package nl.haris.backendspringboottechiteasycontroller;
+package nl.haris.backendspringboottechiteasymodel;
 
 public class Television {
     private Long id;

@@ -1,8 +1,8 @@
-package nl.haris.backendspringboottechiteasycontroller.controllers;
+package nl.haris.backendspringboottechiteasymodel.controllers;
 
-import nl.haris.backendspringboottechiteasycontroller.Television;
-import nl.haris.backendspringboottechiteasycontroller.exceptions.NameTooLongException;
-import nl.haris.backendspringboottechiteasycontroller.exceptions.RecordNotFoundException;
+import nl.haris.backendspringboottechiteasymodel.Television;
+import nl.haris.backendspringboottechiteasymodel.exceptions.NameTooLongException;
+import nl.haris.backendspringboottechiteasymodel.exceptions.RecordNotFoundException;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
@@ -42,7 +42,7 @@ public class TelevisionController {
 
     // READ: Haal alle television's op
     @GetMapping
-    public ResponseEntity<List<Television>> getAllCars(@RequestParam(name = "brand",
+    public ResponseEntity<List<Television>> getAllTelevisions(@RequestParam(name = "brand",
             required = false) String brand) {
         if (brand != null) {
             List<Television> filteredTelevisions = getFilteredTelevision(brand);
@@ -65,7 +65,7 @@ public class TelevisionController {
 
     // UPDATE: Werk een bestaande television bij
     @PutMapping("/{id}")
-    public ResponseEntity<Television> updateCar(@PathVariable Long id, @RequestBody
+    public ResponseEntity<Television> updateTelevision(@PathVariable Long id, @RequestBody
     Television television) {
         var existingTelevision = findTelevisionById(id);
         if (existingTelevision == null) {
